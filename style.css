@@ -1,0 +1,342 @@
+body {
+    margin: 0;
+    text-align: center;
+
+}
+
+.header-content {
+    background-color: rgba(255, 255, 255, 0.416);
+    position: relative;
+
+
+}
+
+.cloud1 {
+    position: relative;
+    left: 250px;
+
+
+}
+
+
+.cloud2 {
+    position: absolute;
+    left: 400px;
+
+}
+
+.nav1 {
+    background-color: #F3EEEA;
+
+}
+
+.nav-item {
+    color: #000;
+}
+
+.nav-item :hover {
+    background-color: rgb(204, 150, 255);
+    color: white;
+}
+
+.bg-dp {
+    position: relative;
+    left: 75px
+}
+
+.dp {
+    border-radius: 50%;
+    position: relative;
+    right: 128px;
+    top: -5px;
+    border-style: groove;
+}
+
+.running {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+
+/* animation */
+.img1 {
+    animation: run 15s linear forwards;
+    animation-delay: 0s;
+    animation-play-state: paused;
+
+}
+
+@keyframes run {
+    0% {
+        opacity: 100%;
+
+    }
+
+    99% {
+
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(-1250%);
+        display: none;
+        opacity: 0;
+    }
+}
+
+/* animation */
+
+h1 {
+    color: #83A2FF;
+    font-size: 6rem;
+    font-weight: 500;
+    font-family: "Sacramento", cursive;
+}
+
+  
+
+h2 {
+    font-size: 3rem;
+    font-family: 'Zeyada', cursive;
+    color: coral;
+    font-weight: 500;
+}
+
+.mountain {
+    z-index: -1;
+    position: relative;
+
+
+}
+span{
+    text-decoration:underline 3px;
+    text-decoration-color:black ;
+    text-underline-offset: 5px;
+    
+}
+span:hover{
+    color:#83A2FF;
+}
+
+
+h3 {
+    font-family: 'Nova Square', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+
+p {
+    font-family: 'Nova Square', sans-serif;
+    width: 35%;
+    margin: auto;
+}
+
+hr {
+    border: dotted purple 6px;
+    border-bottom: none;
+    width: 4%;
+    margin: 50px auto;
+}
+
+.design {
+    color: coral;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    grid-template-rows: repeat(1, 1fr);
+    width: 50%;
+    margin: 50px auto 0 auto;
+    text-align: left;
+    row-gap: 4rem;
+}
+
+.codingboy {
+    position: relative;
+    top: 80px;
+}
+
+.coolboy {
+    position: relative;
+    top: 80px;
+
+}
+
+.btn {
+    background-color: coral;
+    margin-bottom: 25px;
+}
+.btn:hover{
+    background-color: #F3EEEA;
+    color: coral;
+}
+
+.cnt-h2 {
+    font-size: 4rem;
+    margin-bottom: 15px;
+}
+
+.cnt-h3 {
+    font-size: 1.5rem;
+    padding: 5px;
+}
+
+.cntmsg {
+    margin: 10px auto 30px;
+    width: 30%;
+}
+
+.bottomcontainer {
+    background-color: #F3EEEA;
+    padding: 50px 0 30px;
+}
+
+.footer-link {
+    color: coral;
+    font-family: 'Nova Square', sans-serif;
+    margin: 10px 20px;
+    text-decoration: none;
+}
+
+.copyright {
+    color: #000;
+    font-size: 1rem;
+    padding: 20px 0;
+    margin-top: 10px;
+}
+
+/*
+@media only screen and (max-width: 480px){
+    .mountain{
+        width:100%;
+    }
+    .cloud1{
+        display: block;
+        left:30px
+    }
+    .cloud2{
+        display: block;
+        left:-20px;
+    
+    }
+    .parent{
+        width:100%;
+    }
+    
+}
+*/
+@media only screen and (min-width:400px) and (max-width: 636px) {
+    .mountain {
+        width: 100%;
+    }
+
+    .cloud1 {
+        display: block;
+        left: 275px;
+    }
+
+    .cloud2 {
+        display: block;
+        left: -20px;
+
+    }
+    h1{
+        font-size: 4rem;
+    }
+    h2{
+        font-size: 2rem;
+    }
+
+    .parent {
+        width: 100%;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    .mountain {
+        width: 100%;
+    }
+
+    .cloud2 {
+        display: block;
+        left: -20px;
+
+    }
+
+    .parent {
+        width: 100%;
+    }
+
+}
+
+@media only screen and (max-width: 992px) {
+    .mountain {
+        width: 100%;
+    }
+
+    .cloud2 {
+        display: block;
+        left: 20px;
+
+    }
+
+    .parent {
+        width: 100%;
+    }
+
+}
+
+@media only screen and (max-width: 1024px) {
+    .mountain {
+        width: 100%;
+    }
+
+    .cloud2 {
+        display: block;
+        left: 20px;
+
+    }
+
+    .parent {
+        width: 100%;
+    }
+
+}
+
+
+@media only screen and (max-width:400px){
+    .mountain{
+        width:100%;
+    }
+    .cloud1{
+        display: block;
+        left: -10px;
+    }
+    .design{
+        font-size:1rem;
+
+    }
+    .bg-dp{
+       position: relative;
+        left: 10px;
+    }
+    .dp{
+        top:-200px;
+        left:10px;
+    }
+
+    .cloud2{
+        display: block;
+        left:20px;
+    
+    }
+    .parent{
+        width:100%;
+    }
+    
+}
