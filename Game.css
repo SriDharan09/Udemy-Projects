@@ -1,0 +1,202 @@
+body{
+    text-align: center;
+    background-color:#011F3F ;
+}
+#level-title{
+    font-family : "Press Start 2p",cursive;
+    font-size:3rem;
+    margin:5%;
+    color:antiquewhite;
+}
+.container{
+    display: block;
+    width:50%;
+    margin:auto;
+}
+.btn{
+    margin:25px;
+    display:inline-block;
+    height:200px;
+    width: 200px;
+    border :10px solid black;
+    border-radius: 25px;
+  
+}
+.game-over{
+    background-color: red;
+    opacity: 0.8;
+}
+
+.red{
+    background-color: red;
+}.green{
+    background-color: green;
+}
+.blue{
+    background-color: blue;
+}
+.yellow{
+    background-color: yellow;
+}
+.pressed {
+    box-shadow: 0 0 20px white;
+    background-color: grey;
+  }
+
+  #show{
+    display: none;
+    height:100dvh;
+  }
+  h2 {
+    width: 25%;
+    font-size:15px;
+    color:white;
+    font-family : "Press Start 2p",cursive;
+    line-height: 30px;
+
+    
+  }
+  h3{
+    color:aliceblue;
+    font-family : "Press Start 2p",cursive;
+    font-size:10px
+  }
+  #click{
+    background-color:thistle;
+    padding:1px 20px;
+
+  }
+  .video{
+    position: relative;
+    top:-270px;
+    left:500px;
+    margin:30px;
+
+}
+
+
+  @media only screen and (max-width:460px){
+    #level-title{
+        font-size: 1rem;
+        text-align: center;
+        margin: auto;
+    }
+    .container {
+        
+        display: flex;
+        width:100%;
+        margin-top: 50px;
+
+    }
+    .btn{
+        width:100px;
+        height:100px;
+    }
+    .video{
+        position:static;
+        width:350px;
+        height:210px;
+    }
+    h2{
+        width:100%;
+        font-size: 10px;
+
+    }
+    button{
+        margin-bottom:30px;
+    }
+    h1{
+        font-size: 1rem;
+        
+    }
+    #level-title{
+        margin-top:100px;
+    }
+
+    
+
+  }
+  @media only screen and (min-width:451px) and (max-width:800px){
+    #level-title{
+        font-size: 1rem;
+        text-align: center;
+        margin: auto;
+    }
+    .container {
+        
+        display: flex;
+        width:70%;
+        margin-top: 50px;
+
+    }
+    .btn{
+        width:150px;
+        height:150px;
+    }
+    .video{
+        position:static;
+        width:350px;
+        height:210px;
+    }
+    h2{
+        width:100%;
+        font-size: 10px;
+
+    }
+    button{
+        margin-bottom:30px;
+    }
+    h1{
+        font-size: 1rem;
+        
+    }
+    #level-title{
+        margin-top:100px;
+    }
+
+    
+
+  }
+
+  @media only screen and (min-width:800px) and (max-width:1025px){
+    #level-title{
+        font-size: 1rem;
+        text-align: center;
+        margin: auto;
+    }
+    .container {
+        
+        display: flex;
+        width:50%;
+        margin-top: 50px;
+
+    }
+    .btn{
+        width:200px;
+        height:200px;
+    }
+    .video{
+        position:static;
+        width:350px;
+        height:210px;
+    }
+    h2{
+        width:100%;
+        font-size: 10px;
+
+    }
+    button{
+        margin-bottom:30px;
+    }
+    h1{
+        font-size: 3rem;
+        
+    }
+    #level-title{
+        margin-top:100px;
+    }
+
+    
+
+  }
+  
