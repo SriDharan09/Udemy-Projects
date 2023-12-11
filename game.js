@@ -16,9 +16,10 @@ function toggle(){
      }
 }
 
-$("#level-title").click(function(){
+$("#start").click(function(){
     if(!gameStart){
         $(".inst").css("display", "none");
+        $("#start").css("visibility", "hidden");
 
         $("#level-title").text("Level " + level);
         setTimeout(function(){
@@ -36,10 +37,12 @@ $("#level-title").click(function(){
 
 
 function startOver(){
+    $("#start").css("visibility", "visible");
     
     gameStart = false;
     level = 0;
     gamePattern = [];
+
 
 }
 
@@ -65,7 +68,7 @@ function checkAnswers(currentLevel){
       }, 200);
 
     //   $("#level-title").css("font-size","2rem");
-      $("#level-title").text("Game Over,click me to play again");
+      $("#level-title").text("Game Over,press button to play again");
 
       startOver();
       
