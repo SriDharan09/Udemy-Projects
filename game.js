@@ -16,9 +16,10 @@ function toggle(){
      }
 }
 
-$(document).keypress(function(){
+$("#level-title").click(function(){
     if(!gameStart){
         $(".inst").css("display", "none");
+
         $("#level-title").text("Level " + level);
         setTimeout(function(){
 
@@ -35,6 +36,7 @@ $(document).keypress(function(){
 
 
 function startOver(){
+    
     gameStart = false;
     level = 0;
     gamePattern = [];
@@ -63,9 +65,10 @@ function checkAnswers(currentLevel){
       }, 200);
 
     //   $("#level-title").css("font-size","2rem");
-      $("#level-title").text("Game Over, Press Any key to play again");
+      $("#level-title").text("Game Over,click me to play again");
 
       startOver();
+      
       
     }
 }
@@ -102,7 +105,6 @@ function nextSequence(){
     userPattern = [];
 
     level++;
-    
     $("#level-title").text("Level " + level);
 
     var randomNum = Math.floor(Math.random()*4);
