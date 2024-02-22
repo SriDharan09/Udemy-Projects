@@ -1,3 +1,3 @@
-## Web Projects 
+# Web Projects 
 
-# Navigate to the sub Branch to see Projects
+## Navigate to the sub Branch to see Projects
