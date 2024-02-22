@@ -1,1 +1,2 @@
-# web-devs
+# Simon-Game
+## A simple Simon inspired game.
